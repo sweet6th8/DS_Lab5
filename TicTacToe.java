@@ -6,7 +6,7 @@ public class TicTacToe {
 
 	public TicTacToe(char[][] board) {
 		super();
-		this.board = board; // Không cần tạo một mảng mới ở đây
+		this.board = board; 
 	}
 
 	/*
@@ -16,7 +16,7 @@ public class TicTacToe {
 	public boolean checkRows() {
 		int count;
 		for (int i = 0; i < board.length; i++) {
-			count = 1; // Khởi tạo count bằng 1
+			count = 1; 
 			for (int j = 0; j < board[i].length - 1; j++) {
 				if (board[i][j] == EMPTY || board[i][j] != board[i][j + 1]) {
 					break;
@@ -39,7 +39,7 @@ public class TicTacToe {
 	public boolean checkColumns() {
 		int count;
 		for (int i = 0; i < board.length; i++) {
-			count = 1; // Khởi tạo count bằng 1
+			count = 1; 
 			for (int j = 0; j < board[i].length - 1; j++) {
 				if (board[j][i] == EMPTY || board[j][i] != board[j + 1][i]) {
 					break;
